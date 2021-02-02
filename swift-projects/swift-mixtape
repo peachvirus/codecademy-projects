@@ -1,0 +1,38 @@
+// Write your code below 📼
+// this is for the sad grls in the club
+print(".------------------------.")
+print("| sad girls club  90 min |")
+print("|     __  ______  __     |")
+print("|    (  )|).....|(  )    |")
+print("|    (__)|)_____|(__)    |")
+print("|    ________________    |")
+print("|___/_._o________o_._\\___|")
+
+var mixtape: [String] = ["Ghosting - Mother Mother",]
+mixtape.append("Rosas - La Oreja de Van Gogh")
+mixtape.append("Nobody - Mitsuki")
+mixtape.append("Me Muero - La Quinta Estacion")
+mixtape.append("i hate u, i love u - gnash")
+mixtape.append("Rainmaker - Sleigh Bells")
+mixtape.append("A Nervous Tic Motion of the Head to the Left - Andrew Bird")
+mixtape.append("Ivy - Frank Ocean")
+mixtape.append("Feelings - Hayley Kiyoko")
+mixtape.append("If U Love Me Now - MUNA")
+
+print(mixtape.count)
+
+// should be 10 songs
+
+mixtape.remove(at: 4)
+// now nine
+mixtape.remove(at: 5)
+// now eight
+mixtape.insert("Kiss! Kiss! One More Kiss!! - INSHOW-HA", at: 4)
+//now nine
+mixtape.insert("Million Reasons - Lady Gaga", at: 9)
+// now 10
+
+print("Side A:")
+for item in mixtape {
+  print(item)
+}
