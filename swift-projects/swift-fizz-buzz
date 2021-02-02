@@ -1,0 +1,15 @@
+var num: Int
+for num in 1...100 {
+  // how to check if a number is a multiple of 3... % 3 = 00
+  if num % 2 == 0 {
+    print("Pazz")
+  } else if num % 15 == 0 {
+ print("FizzBuzz")
+  } else if num % 3 == 0 {
+    print("Fizz")
+  } else if num % 5 == 0 {
+    print("Buzz")
+  } else {
+    print("\(num)")
+  }
+}
