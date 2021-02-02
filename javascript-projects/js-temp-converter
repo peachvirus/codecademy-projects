@@ -8,5 +8,5 @@ let fahrenheit = celsius *  (9/5) + 32;
 // this is how to convert celsius to fahrenheit - let allows it to be re-assigned
 fahrenheit = Math.floor(fahrenheit);
 //.floor() allows you to round down decimals
-console.log(`The tempurature is ${newton} degrees Newton.`)
+console.log(`The tempurature is ${newton} degrees Newton.`);
 // output is "The tempurature is -91 degrees Newton."
