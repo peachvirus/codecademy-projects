@@ -5,7 +5,7 @@ const runnerAge = 18;
 /*
 registeredEarly ? && runnerAge > 18 ? raceNumber += 1000 : console.log('ok');
 ok SO i think i know what i was trying to do but this def might not be a thing when using ternary operators
-aka i was if registered early and age is greater than 18 then add 1000 to race number
+aka i was looking to write 'if registered early and age is greater than 18 then add 1000 to race number'
 */
 
 if (registeredEarly && runnerAge > 18) {
