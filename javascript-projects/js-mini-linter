@@ -5,7 +5,7 @@ let overusedWords = ['really', 'very', 'basically'];
 let unnecessaryWords = ['extremely', 'literally', 'actually' ];
 
 // my code below:
-let storyWords = story.split(' '); 
+let storyWords = story.split(' ');
 //turns string into array
 //console.log(storyWords.length);
 //output 188
