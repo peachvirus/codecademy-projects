@@ -1,0 +1,95 @@
+const team = {
+  // psa: these are not sports people, they're jpop singers
+  
+  _players: [
+    {
+    firstName: 'Sayumi',
+    lastName: 'Michishige',
+    age: 30
+  }, {
+    firstName: 'Reina',
+    lastName: 'Tanaka',
+    age: 30
+  }, {
+    firstName: 'Eri',
+    lastName: 'Kamei',
+    age: 30
+  }
+  ],
+  _games: [
+    {
+      opponent: 'AKB48',
+      teamPoints: 2014,
+      opponentPoints: 48
+    }, {
+      opponent: 'WASUTA',
+      teamPoints: 2014,
+      opponentPoints: 3000
+    }, {
+      opponent: 'Perfume',
+      teamPoints: 2014,
+      opponentPoints: 3
+    }
+  ],
+
+  get games() {
+    return this._games;
+  },
+
+  get players() {
+    return this._players;
+  },
+
+  addPlayer(firstName, lastName, age) {
+    let player = {
+      firstName,
+      lastName,
+      age
+    };
+
+      this.players.push(player);
+  },
+
+  addGame(opponent, teamPoints, opponentPoints) {
+    let game = {
+      opponent,
+      teamPoints,
+      opponentPoints
+    };
+      this.games.push(game);
+  },
+};
+
+// player details from codecademy - i don't know basketball 
+
+team.addPlayer('Steph', 'Curry', 28);
+team.addPlayer('Lisa', 'Leslie', 28);
+team.addPlayer('Bugs', 'Bunny', 28);
+
+// 
+team.addGame('BabyMetal', 2014, 3);
+team.addGame('Angerme', 1998, 2004);
+team.addGame('C-ute', 1998, 2001);
+
+console.log(team.players);
+/*
+output: 
+[ { firstName: 'Sayumi', lastName: 'Michishige', age: 30 },
+  { firstName: 'Reina', lastName: 'Tanaka', age: 30 },
+  { firstName: 'Eri', lastName: 'Kamei', age: 30 },
+  { firstName: 'Steph', lastName: 'Curry', age: 28 },
+  { firstName: 'Lisa', lastName: 'Leslie', age: 28 },
+  { firstName: 'Bugs', lastName: 'Bunny', age: 28 } ]
+*/
+
+console.log(team.games);
+/*
+[ { opponent: 'AKB48', teamPoints: 2014, opponentPoints: 48 },
+  { opponent: 'WASUTA', teamPoints: 2014, opponentPoints: 3000 },
+  { opponent: 'Perfume', teamPoints: 2014, opponentPoints: 3 },
+  { opponent: 'BabyMetal', teamPoints: 2014, opponentPoints: 3 },
+  { opponent: 'Angerme', teamPoints: 1998, opponentPoints: 2004 },
+  { opponent: 'C-ute', teamPoints: 1998, opponentPoints: 2001 } ]
+*/
+
+// it worked! 
